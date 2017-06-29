@@ -1,0 +1,35 @@
+ <h2 class="page-header">Leave History</h2>  <h2 class="page-header"><a href="/leaves">Request New Leave</a></h2>
+
+
+
+  {{#each contact}}
+        <table class="table table-bordered">
+    <thead>
+      <tr>
+    
+        <th>Start_date</th>
+
+        <th>End_Date</th>
+        <th>LeaveType_</th>
+       
+        <th>Status</th>
+      
+
+      </tr>
+ </thead>
+ <tbody>
+     <tr>
+      
+    
+        <td>{{this.StartDate}}</td>
+        <td>{{this.EndDate}}</td>
+        <td>{{this.LeaveType}}</td>
+       
+        <td>{{this.ApprovalStatus}}</td>
+      
+    </form>
+  </tr>
+  <br>
+  </tbody>
+    </table>
+{{/each}}
